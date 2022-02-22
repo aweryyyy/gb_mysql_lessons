@@ -91,3 +91,8 @@ create table users (id int primary key, name varchar(500));
 -- Bye
 
 -- C:\Users\awery>
+
+
+-- сделать бекап 100 строк таблицы help_keyword 
+-- C:\Users\awery>mysqldump -u root -p mysql help_keyword --opt --where="1 = 1 order by help_keyword_id limit 100" > c://dump_db/one_tab.sql
+-- Enter password: ********
